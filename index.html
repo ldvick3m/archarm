@@ -15,6 +15,8 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 
 	<!-- =======================================================
     Theme Name: Butterfly
@@ -88,7 +90,7 @@
   background: #fff;
 }
 .button_container span {
-  background: #ff5252;
+  background: #2b8d18;
   border: none;
   height: 5px;
   width: 100%;
@@ -117,7 +119,7 @@
 }
 .overlay:before {
   content: '';
-  background: #ff5252;
+  background: #383839;
   left: -55%;
   top: 0;
   width: 50%;
@@ -127,7 +129,7 @@
 }
 .overlay:after {
   content: '';
-  background: #ff5252;
+  background: #383839;
   right: -55%;
   top: 0;
   width: 50%;
@@ -220,8 +222,270 @@
 .clearfix {
   overflow: hidden;
 }
+.logo {
+	position: fixed;
+    top: 2%;
+    width: 65px;
+    left: 5%;
+}
+
+@media (max-width: 820px){
+	.top_content {
+		padding-top: 95px;
+	}
+	.top_cont_inner {
+		background-position: right;
+	}
+}
 
 
+/*news slider begins*/
+/******************  News Slider Demo-8 *******************/
+.post-slide8{
+    margin: 0 15px;
+    position:relative;
+    background:#fff;
+    box-shadow: 0 1px 2px rgba(43,59,93,0.30);
+    margin-bottom:2em;
+}
+.post-slide8 .post-img{
+    position: relative;
+    overflow: hidden;
+}
+.post-slide8 .post-img img{
+    width: 100%;
+    height: auto;
+}
+.post-slide8 .over-layer{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
+    background: rgba(0,0,0,0.6);
+    transition: all 0.30s ease;
+}
+.post-slide8:hover .over-layer{
+    opacity:1;
+}
+.post-slide8 .post-link{
+    margin:0;
+    padding:0;
+    position: relative;
+    top:45%;
+    text-align:center;
+}
+.post-slide8 .post-link li{
+    display: inline-block;
+    list-style: none;
+    margin-right:20px;
+}
+.post-slide8 .post-link li a{
+    color:#fff;
+    font-size:20px;
+}
+.post-slide8 .post-link li a:hover{
+    color: #ff8b3d;
+    text-decoration:none;
+}
+.post-slide8 .post-date{
+    position:absolute;
+    top:10%;
+    left:4%;
+}
+.post-slide8 .date{
+    display: inline-block;
+    border-radius: 3px 0 0 3px;
+    padding: 5px 10px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background:#333;
+    float: left;
+}
+.post-slide8 .month{
+    display: inline-block;
+    border-radius: 0 3px 3px 0;
+    padding: 5px 13px;
+    color: #111;
+    font-size: 20px;
+    font-weight: bold;
+    background: #ff8b3d;
+}
+.post-slide8 .post-content{
+    padding:30px;
+}
+.post-slide8 .post-title{
+    margin:0 0 15px 0;
+}
+.post-slide8 .post-title a{
+    font-size:18px;
+    font-weight:bold;
+    color:#333;
+    display: inline-block;
+    text-transform:capitalize;
+    transition: all 0.3s ease 0s;
+}
+.post-slide8 .post-title a:hover{
+    text-decoration: none;
+    color:#ff8b3d;
+}
+.post-slide8 .post-description{
+    font-size: 14px;
+    line-height:24px;
+    color:#808080;
+}
+.post-slide8 .read-more{
+    color:#333;
+    font-size:14px;
+    font-weight:bold;
+    text-transform:uppercase;
+    position: relative;
+    transition: color 0.20s linear;
+}
+.post-slide8 .read-more:hover{
+    text-decoration:none;
+    color:#ff8b3d;
+}
+.post-slide8 .read-more:after{
+    content:"";
+    position: absolute;
+    width:30%;
+    display: block;
+    border:1px solid #ff8b3d;
+    transition: all 0.30s ease;
+}
+.post-slide8 .read-more:hover:after{
+    width:100%;
+}
+@media only screen and (max-width: 479px) {
+    .post-slide8 .month{
+        font-size:14px;
+    }
+    .post-slide8 .date{
+        font-size:14px;
+    }
+}
+
+.latest-news {
+	font-size: 38px;
+    color: #222222;
+    font-family: 'Dosis';
+    font-weight: 700;
+    margin: 7% 0 7% 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+/*news slider ends*/
+/*latest projects */
+/******************  News Slider Demo-13 *******************/
+.post-slide13{
+    padding: 0 15px;
+}
+.post-slide13 .post-img{
+    position: relative;
+}
+.post-slide13 .post-img > a{
+    display:block;
+}
+.post-slide13 .post-img img{
+    width: 100%;
+    height:auto;
+}
+.post-slide13 .post-img:hover:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:100%;
+    background-color: rgba(220, 0, 90, 0.6);
+}
+.post-slide13 .post-img:after{
+    content: "\f065";
+    font-family: "Font Awesome 5 Free"; font-weight: 900;
+    position: absolute;
+    top:17px;
+    right:20px;
+    color:#fff;
+    opacity: 0;
+    transform: scale(0.8);
+    transition:all 0.3s linear 0s;
+}
+.post-slide13 .post-img:hover:after{
+    opacity: 1;
+    transform: scale(1);
+}
+.post-slide13 .post-title{
+    margin-top: 20px;
+}
+.post-slide13 .post-title > a{
+    color:#222;
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.post-slide13 .post-title > a:hover{
+    text-decoration: none;
+    color:#dc005a;
+}
+.post-slide13 .post-bar{
+    padding: 0;
+    list-style: none;
+}
+.post-slide13 .post-bar > li{
+    display: inline-block;
+}
+.post-slide13 .post-date,
+.post-slide13 .author,
+.post-slide13 .author > a{
+    color:#8f8f8f;
+    font-size: 12px;
+    margin-right: 16px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+.post-slide13 .post-date > i,
+.post-slide13 .author > i{
+    margin-right: 5px;
+}
+.post-slide13 .author > a:hover{
+    color:#dc005a;
+}
+.post-slide13 .post-description{
+    color:#8f8f8f;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 5px;
+}
+.post-slide13 .post-description:before{
+    content: "";
+    display: block;
+    border-top: 4px solid #dc005a;
+    padding-bottom: 12px;
+    width: 50px;
+}
+.owl-theme .owl-controls .owl-page span{
+    width: 52px;
+    height:5px;
+    border-radius: 0;
+    opacity: 0.5;
+    margin-bottom: 0;
+}
+.owl-theme .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span{
+    background: #dc005a;
+    opacity: 1;
+}
+
+.news-contaienr {
+	background-color: #f9f9f9;
+	padding: 0% 0% 5% 0%;
+}
+.projects-contaienr {
+	padding: 0% 0% 5% 0%;
+}
+/*latest projects ends*/
 </style>
 </head>
 
@@ -235,9 +499,8 @@
 					<div class="row">
 						<div class="col-lg-5 col-sm-7">
 							<div class="top_left_cont flipInY wow animated">
-								<h3>Colourful &amp; sexy!</h3>
-								<h2>creating websites that
-                make you stop &amp; stare</h2>
+								<h3>About Archicon</h3>
+								<h2>Brief About Us Text</h2>
 								<p> Accusantium quam, aliquam ultricies eget tempor id, aliquam eget nibh et. Maecen aliquam, risus at semper. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum. </p>
 								<a href="#service" class="learn_more2">Learn more</a> </div>
 						</div>
@@ -255,25 +518,40 @@
 			<h2>Services</h2>
 			<div class="service_area">
 				<div class="row">
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<div class="service_block">
-							<div class="service_icon delay-03s animated wow  zoomIn"> <span><i class="fa-flash"></i></span> </div>
-							<h3 class="animated fadeInUp wow">Quick TurnAround</h3>
-							<p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+							<div class="service_icon delay-03s animated wow  zoomIn">
+								<img src="./img/services/construction.png">
+							</div>
+							<a href="#"><h3 class="animated fadeInUp wow">Cunstruction</h3></a>
+							<p class="animated fadeInDown wow">Brief text about cunstruction</p>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<div class="service_block">
-							<div class="service_icon icon2  delay-03s animated wow zoomIn"> <span><i class="fa-comments"></i></span> </div>
-							<h3 class="animated fadeInUp wow">Friendly Support</h3>
-							<p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+							<div class="service_icon delay-03s animated wow  zoomIn">
+								<img src="./img/services/interior-design.png">
+							</div>
+							<a href="#"><h3 class="animated fadeInUp wow">Interior Design</h3></a>
+							<p class="animated fadeInDown wow">Brief text about interior design</p>
 						</div>
 					</div>
-					<div class="col-lg-4">
+					<div class="col-lg-3">
 						<div class="service_block">
-							<div class="service_icon icon3  delay-03s animated wow zoomIn"> <span><i class="fa-shield"></i></span> </div>
-							<h3 class="animated fadeInUp wow">top Security</h3>
-							<p class="animated fadeInDown wow">Proin iaculis purus consequat sem cure digni. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+							<div class="service_icon delay-03s animated wow  zoomIn">
+								<img src="./img/services/architectural-desing.png">
+							</div>
+							<a href="#"><h3 class="animated fadeInUp wow">Architectural Design</h3></a>
+							<p class="animated fadeInDown wow">Brief text about architectural design</p>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="service_block">
+							<div class="service_icon delay-03s animated wow  zoomIn">
+								<img src="./img/services/remodeling.png">
+							</div>
+							<a href="#"><h3 class="animated fadeInUp wow">Remodeling</h3></a>
+							<p class="animated fadeInDown wow">Brief text about remodeling</p>
 						</div>
 					</div>
 				</div>
@@ -282,139 +560,212 @@
 	</section>
 	<!--Service-->
 
-	<section id="work_outer">
-		<!--main-section-start-->
-		<div class="top_cont_latest">
-			<div class="container">
-				<h2>Latest Work</h2>
-				<div class="work_section">
-					<div class="row">
-						<div class="col-lg-6 col-sm-6 wow fadeInLeft delay-05s">
-							<div class="service-list">
-								<div class="service-list-col1"> <i class="icon-doc"></i> </div>
-								<div class="service-list-col2">
-									<h3>Process Walkthrough</h3>
-									<p>Proin iaculis purus digni consequat sem digni ssim. Donec entum digni ssim.</p>
-								</div>
-							</div>
-							<div class="service-list">
-								<div class="service-list-col1"> <i class="icon-comment"></i> </div>
-								<div class="service-list-col2">
-									<h3>24/7 support</h3>
-									<p>Proin iaculis purus consequat sem digni ssim. Digni ssim porttitora .</p>
-								</div>
-							</div>
-							<div class="service-list">
-								<div class="service-list-col1"> <i class="icon-database"></i> </div>
-								<div class="service-list-col2">
-									<h3>Hosting & Storage</h3>
-									<p>Proin iaculis purus consequat digni sem digni ssim. Purus donec porttitora entum.</p>
-								</div>
-							</div>
-							<div class="service-list">
-								<div class="service-list-col1"> <i class="icon-cog"></i> </div>
-								<div class="service-list-col2">
-									<h3>Customization options</h3>
-									<p>Proin iaculis purus consequat sem digni ssim. Sem porttitora entum.</p>
-								</div>
-							</div>
-							<div class="work_bottom"> <span>Ready to take the plunge?</span> <a href="#contact" class="contact_btn">Contact Us</a> </div>
-						</div>
-						<figure class="col-lg-6 col-sm-6  text-right wow fadeInUp delay-02s"> </figure>
-					</div>
-				</div>
-			</div>
-			<!--<div class="work_pic"><img src="img/dashboard_pic.png" alt=""></div>-->
-		</div>
-	</section>
 	<!--main-section-end-->
 
 
-	<section class="main-section" id="client_outer">
-		<!--main-section client-part-start-->
-		<h2>Happy Clients</h2>
-		<div class="client_area ">
-			<div class="client_section animated  fadeInUp wow">
-				<div class="client_profile">
-					<div class="client_profile_pic"><img src="img/client-pic1.jpg" alt=""></div>
-					<h3>Saul Goodman</h3>
-					<span>Lawless Inc</span> </div>
-				<div class="quote_section">
-					<div class="quote_arrow"></div>
-					<p><b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small>						</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-			<div class="client_section animated  fadeInDown wow">
-				<div class="client_profile flt">
-					<div class="client_profile_pic"><img src="img/client-pic2.jpg" alt=""></div>
-					<h3>Marie Schrader</h3>
-					<span>DEA Foundation</span> </div>
-				<div class="quote_section flt">
-					<div class="quote_arrow2"></div>
-					<p><b><img src="img/quote_sign_left.png" alt=""></b> Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper. <small><img src="img/quote_sign_right.png" alt=""></small>						</p>
-				</div>
-				<div class="clear"></div>
-			</div>
-		</div>
-	</section>
-	<!--main-section client-part-end-->
+
+	<!--
+<section class="main-section paddind" id="Portfolio">
+	<div class="container">
+    	<h2>Portfolio</h2>
+    	<h6>Fresh portfolio of designs that will keep you wanting more.</h6>
+	</div>
 
 
-	<section class="main-section team" id="team">
-		<!--main-section team-start-->
-		<div class="container">
-			<h2>Amazing Team</h2>
-			<h6>Take a closer look into our amazing team. We won’t bite.</h6>
-			<div class="team-leader-block clearfix">
-				<div class="team-leader-box">
-					<div class="team-leader wow fadeInDown delay-03s">
-						<div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-						<img src="img/team-leader-pic1.jpg" alt="">
-						<ul>
-							<li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-							<li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-							<li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-							<li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-						</ul>
-					</div>
-					<h3 class="wow fadeInDown delay-03s">Walter White</h3>
-					<span class="wow fadeInDown delay-03s">Chief Executive Officer</span>
-					<p class="wow fadeInDown delay-03s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-				</div>
-				<div class="team-leader-box">
-					<div class="team-leader  wow fadeInDown delay-06s">
-						<div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-						<img src="img/team-leader-pic2.jpg" alt="">
-						<ul>
-							<li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-							<li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-							<li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-							<li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-						</ul>
-					</div>
-					<h3 class="wow fadeInDown delay-06s">Jesse Pinkman</h3>
-					<span class="wow fadeInDown delay-06s">Product Manager</span>
-					<p class="wow fadeInDown delay-06s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-				</div>
-				<div class="team-leader-box">
-					<div class="team-leader wow fadeInDown delay-09s">
-						<div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
-						<img src="img/team-leader-pic3.jpg" alt="">
-						<ul>
-							<li><a href="javascript:void(0)" class="fa-twitter"></a></li>
-							<li><a href="javascript:void(0)" class="fa-facebook"></a></li>
-							<li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
-							<li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
-						</ul>
-					</div>
-					<h3 class="wow fadeInDown delay-09s">Skyler white</h3>
-					<span class="wow fadeInDown delay-09s">Accountant</span>
-					<p class="wow fadeInDown delay-09s">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consequat sollicitudin cursus. Dolor sit amet, consectetur adipiscing elit proin consequat.</p>
-				</div>
-			</div>
-		</div>
-	</section>
+</section>
+
+-->
+<!-- latest news section -->
+<div class="news-contaienr">
+<div class="container">
+        <h3 class="h3 latest-news">latest news</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="news-slider8" class="owl-carousel">
+                    <div class="post-slide8">
+                        <div class="post-img">
+                            <img src="http://bestjquery.com/tutorial/news-slider/demo24/images/img-1.jpg" alt="">
+                            <div class="over-layer">
+                                <ul class="post-link">
+                                    <li><a href="#" class="fa fa-search"></a></li>
+                                    <li><a href="#" class="fa fa-link"></a></li>
+                                </ul>
+                            </div>
+                            <div class="post-date">
+                                <span class="date">3</span>
+                                <span class="month">Mar</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Latest News Post</a>
+                            </h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+     
+                    <div class="post-slide8">
+                        <div class="post-img">
+                            <img src="http://bestjquery.com/tutorial/news-slider/demo24/images/img-2.jpg" alt="">
+                            <div class="over-layer">
+                                <ul class="post-link">
+                                    <li><a href="#" class="fa fa-search"></a></li>
+                                    <li><a href="#" class="fa fa-link"></a></li>
+                                </ul>
+                            </div>
+                            <div class="post-date">
+                                <span class="date">5</span>
+                                <span class="month">Mar</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Latest News Post</a>
+                            </h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+                    
+                    <div class="post-slide8">
+                        <div class="post-img">
+                            <img src="http://bestjquery.com/tutorial/news-slider/demo24/images/img-3.jpg" alt="">
+                            <div class="over-layer">
+                                <ul class="post-link">
+                                    <li><a href="#" class="fa fa-search"></a></li>
+                                    <li><a href="#" class="fa fa-link"></a></li>
+                                </ul>
+                            </div>
+                            <div class="post-date">
+                                <span class="date">5</span>
+                                <span class="month">Mar</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Latest News Post</a>
+                            </h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+                    
+                    <div class="post-slide8">
+                        <div class="post-img">
+                            <img src="http://bestjquery.com/tutorial/news-slider/demo24/images/img-4.jpg" alt="">
+                            <div class="over-layer">
+                                <ul class="post-link">
+                                    <li><a href="#" class="fa fa-search"></a></li>
+                                    <li><a href="#" class="fa fa-link"></a></li>
+                                </ul>
+                            </div>
+                            <div class="post-date">
+                                <span class="date">5</span>
+                                <span class="month">Mar</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <h3 class="post-title">
+                                <a href="#">Latest News Post</a>
+                            </h3>
+                            <p class="post-description">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consectetur cumque dolorum, ex incidunt ipsa laudantium necessitatibus neque quae tempora......
+                            </p>
+                            <a href="#" class="read-more">read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    
+
+<!-- latest news section ends -->
+<!-- latest projects section -->
+<div class="projects-contaienr">
+<div class="container">
+        <h3 class="h3 latest-news">latest projects</h3>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="news-slider13" class="owl-carousel">
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-1.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-2.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-3.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-4.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                    <div class="post-slide13">
+                        <div class="post-img">
+                            <a href="#"><img src="http://bestjquery.com/tutorial/news-slider/demo3/images/img-5.jpg" alt=""></a>
+                        </div>
+                        <h5 class="post-title"><a href="#">Aliquam rutrum</a></h5>
+                        <ul class="post-bar">
+                            <li class="post-date"><i class="fa fa-calendar"></i> june 5, 2015</li>
+                            <li class="author"><i class="fa fa-user"></i>   <a href="#">admin</a></li>
+                        </ul>
+                        <p class="post-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi ultrices felis in orci condimentum, at viverra nulla pulvinar. Donec diam nisl.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- latest projects section ends -->
 
 	<footer class="footer_section" id="contact">
 		<div class="container">
@@ -499,6 +850,9 @@
 			</div>
 		</div>
 	</footer>
+	<!-- logo -->
+	<a href="#"><img class="logo" src="./img/logo.png"></a>
+	<!-- logo ends -->
 	<!-- navigation -->
 	<div class="button_container" id="toggle">
 	  <span class="top"></span>
@@ -516,6 +870,7 @@
 	    </ul>
 	  </nav>
 	</div>
+	<!-- navigation ends -->
 	<!-- navigation ends -->
 	<script type="text/javascript">
 	$('#toggle').click(function() {
@@ -645,8 +1000,149 @@
 			jQuery('#all').click();
 			return false;
 		});
+
+
+
+$(document).ready(function() {
+    $("#news-slider").owlCarousel({
+        items : 2,
+        itemsDesktop : [1199,2],
+        itemsMobile : [600,1],
+        pagination :true,
+        autoPlay : true
+    });
+    
+    $("#news-slider2").owlCarousel({
+        items:3,
+        itemsDesktop:[1199,2],
+        itemsDesktopSmall:[980,2],
+        itemsMobile:[600,1],
+        pagination:false,
+        navigationText:false,
+        autoPlay:true
+    });
+    
+    $("#news-slider3").owlCarousel({
+        items:3,
+        itemsDesktop:[1199,2],
+        itemsDesktopSmall:[1000,2],
+        itemsMobile:[700,1],
+        pagination:false,
+        navigationText:false,
+        autoPlay:true
+    });
+    
+    $("#news-slider4").owlCarousel({
+        items:3,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[1000,2],
+        itemsMobile:[600,1],
+        pagination:false,
+        navigationText:false,
+        autoPlay:true
+    });
+    
+    $("#news-slider5").owlCarousel({
+        items:3,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[1000,2],
+        itemsMobile:[650,1],
+        pagination:false,
+        navigationText:false,
+        autoPlay:true
+    });
+    
+    $("#news-slider6").owlCarousel({
+        items : 3,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [600,1],
+        pagination:false,
+        navigationText:false
+    });
+    
+    $("#news-slider7").owlCarousel({
+        items : 3,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [1000,2],
+        itemsMobile : [650,1],
+        pagination :false,
+        autoPlay : true
+    });
+    
+    $("#news-slider8").owlCarousel({
+        items : 3,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [600,1],
+        autoPlay:true
+    });
+    
+    $("#news-slider9").owlCarousel({
+        items : 3,
+        itemsDesktop:[1199,2],
+        itemsDesktopSmall:[980,2],
+        itemsTablet:[650,1],
+        pagination:false,
+        navigation:true,
+        navigationText:["",""]
+    });
+    
+    $("#news-slider10").owlCarousel({
+        items : 4,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [600,1],
+        navigation:true,
+        navigationText:["",""],
+        pagination:true,
+        autoPlay:true
+    });
+    
+    $("#news-slider11").owlCarousel({
+        items : 4,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [600,1],
+        pagination:true,
+        autoPlay:true
+    });
+    
+    $("#news-slider12").owlCarousel({
+        items : 2,
+        itemsDesktop:[1199,2],
+        itemsDesktopSmall:[980,1],
+        itemsTablet: [600,1],
+        itemsMobile : [550,1],
+        pagination:true,
+        autoPlay:true
+    });
+    
+    $("#news-slider13").owlCarousel({
+        navigation : false,
+        pagination : true,
+        items : 3,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [600,1],
+        navigationText : ["",""]
+    });
+    
+    $("#news-slider14").owlCarousel({
+        items : 4,
+        itemsDesktop:[1199,3],
+        itemsDesktopSmall:[980,2],
+        itemsMobile : [550,1],
+        pagination:false,
+        autoPlay:true
+    });
+});
+
+
+
+
 	</script>
 	<script src="contactform/contactform.js"></script>
-
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 </body>
 </html>
